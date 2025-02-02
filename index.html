@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensalafit - Tu marca personal de ensaladas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #dcb889; /* main bg */
+            font-family: Arial, sans-serif;
+        }
+
+        .logo-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo-container img {
+            max-width: 100%; /* El logo se ajusta al ancho del contenedor */
+            height: auto;
+            width: 200px; /* Tamaño base para escritorio */
+        }
+
+        .cta-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #364389; /* CTA */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #4E8950; /* accent */
+        }
+
+        /* Estilos para móviles */
+        @media (max-width: 600px) {
+            .logo-container img {
+                width: 150px; /* Tamaño más pequeño para móviles */
+            }
+
+            .cta-button {
+                font-size: 14px; /* Texto más pequeño para móviles */
+                padding: 8px 16px;
+            }
+        }
+
+        /* Estilos para tablets */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .logo-container img {
+                width: 180px; /* Tamaño intermedio para tablets */
+            }
+
+            .cta-button {
+                font-size: 15px; /* Texto intermedio para tablets */
+                padding: 9px 18px;
+            }
+        }
+
+        /* Estilos para escritorios grandes */
+        @media (min-width: 1025px) {
+            .logo-container img {
+                width: 200px; /* Tamaño grande para escritorios */
+            }
+
+            .cta-button {
+                font-size: 16px; /* Texto grande para escritorios */
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo_ensalafit.png" alt="Ensalafit Logo">
+        <br>
+        <a href="#" class="cta-button">Descubre nuestras ensaladas</a>
+    </div>
+</body>
+</html>
