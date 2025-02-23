@@ -15,17 +15,42 @@
             min-height: 100vh;
             background-color: #dcb889; /* main bg */
             font-family: Arial, sans-serif;
+            z-index: 0;
+        }
+
+        body div.overlay{
+            mix-blend-mode: multiply;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            min-width: 100vw;
+            position: absolute;
+            background-color: #dcb889; /* main bg */
+            font-family: Arial, sans-serif;
+            background-image: url('double-bubble-outline.webp');
+            z-index: 1;
+
         }
 
         .logo-container {
             text-align: center;
             padding: 20px;
+            z-index: 1000;
         }
 
         .logo-container img {
             max-width: 100%; /* El logo se ajusta al ancho del contenedor */
             height: auto;
             width: 200px; /* Tamaño base para escritorio */
+        }
+
+        .logo-container p {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #a07668; /* Texto */
         }
 
         .cta-button {
@@ -38,6 +63,7 @@
             font-size: 16px;
             transition: background-color 0.3s ease;
             display: inline-block;
+            z-index: 100;
         }
 
         .cta-button:hover {
@@ -54,6 +80,7 @@
             font-size: 16px;
             transition: background-color 0.3s ease;
             display: inline-block;
+            z-index: 100;
         }
 
         .cta-button-order:hover {
@@ -98,8 +125,15 @@
     </style>
 </head>
 <body>
+    <div class="overlay"></div>
     <div class="logo-container">
         <img src="logo_ensalafit.png" alt="Ensalafit Logo">
+        <p>
+            ¡Bienvenido a <b>Ensalafit!</b> <br>
+            La mejor opción para comer saludable. <br>
+            envíos a domicilio en <b>Guadalupe y Zacatecas.</b> <br>
+            <b>Horario de atención:</b> Lunes-Sábado de 8:30 a 17:00 hrs.
+        </p>
         <br>
         <a href="/menu_ensalafit.pdf" class="cta-button">Descubre nuestras ensaladas</a>
         <br>
